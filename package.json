@@ -16,7 +16,7 @@
     "sass": "./lib/build-sass.sh",
     "js": "./lib/build-js.sh",
     "predeploy": "npm install && npm run build",
-    "deploy": "npm run predeploy && node_modules/iigb-aws-helpers/deploy.sh",
+    "deploy": "node_modules/iigb-aws-helpers/deploy.sh",
     "release": "node_modules/iigb-aws-helpers/release.sh",
     "rollback": "node_modules/iigb-aws-helpers/rollback.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
