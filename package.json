@@ -11,10 +11,11 @@
     "start": "npm run clean && npm run build && node lib/server.js",
     "clean": "rimraf build && mkdirp build",
     "build": "npm run html && npm run sass && npm run js",
-    "build-dev": "export DIT_ENV='development' && { npm run sass & npm run js & npm run html; }",
+    "build-dev": "export DIT_ENV='development' && { npm run sass & npm run js & npm run images & npm run html; }",
     "html": "DEBUG=\"$npm_package_config_debug, $DEBUG\" node ./lib/build-pages.js",
     "sass": "./lib/build-sass.sh",
     "js": "./lib/build-js.sh",
+    "images": "./lib/copy-images.sh",
     "predeploy": "npm install && npm run build",
     "deploy": "node_modules/iigb-aws-helpers/deploy.sh",
     "release": "node_modules/iigb-aws-helpers/release.sh",
@@ -54,6 +55,7 @@
     "watchify": "^3.9.0"
   },
   "dependencies": {
+    "fs-extra": "^2.0.0",
     "jquery": "^3.1.1"
   }
 }

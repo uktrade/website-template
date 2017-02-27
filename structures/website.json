@@ -25,6 +25,56 @@
               "hoist": "true"
             }
           }
+        },
+        {
+          "path": "new",
+          "layout": "layout.default.html",
+          "data": {
+            "theContent": {
+              "content": "new.md",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "occasional",
+          "layout": "example.html",
+          "data": {
+            "theContent": {
+              "content": "occasional.md",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "regular",
+          "layout": "example.html",
+          "data": {
+            "theContent": {
+              "content": "regular.md",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "about",
+          "layout": "example.html",
+          "data": {
+            "theContent": {
+              "content": "about.md",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "about",
+          "layout": "example.html",
+          "data": {
+            "theContent": {
+              "content": "about.md",
+              "hoist": "true"
+            }
+          }
         }
       ]
     }
