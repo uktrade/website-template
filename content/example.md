@@ -1,5 +1,6 @@
 ---
-title: Example
+title: Hello
+subTitle: Welcome
 ---
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod

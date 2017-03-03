@@ -8,14 +8,34 @@
   "pages": [
     {
       "path": "",
-      "layout": "hello.html",
-      "pageTitle": "Hello",
+      "layout": "layout.default.html",
+      "pageTitle": "DIT",
       "data": {
         "myContent": {
-          "content": "hello.md"
+          "content": "index.html"
         }
       },
       "children":[
+        {
+          "path": "/",
+          "layout": "layout.default.html",
+          "data": {
+            "theContent": {
+              "content": "index.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "about",
+          "layout": "layout.default.html",
+          "data": {
+            "theContent": {
+              "content": "about.html",
+              "hoist": "true"
+            }
+          }
+        },
         {
           "path": "example",
           "layout": "example.html",
@@ -31,14 +51,14 @@
           "layout": "layout.default.html",
           "data": {
             "theContent": {
-              "content": "new.md",
+              "content": "new.html",
               "hoist": "true"
             }
           }
         },
         {
           "path": "occasional",
-          "layout": "example.html",
+          "layout": "layout.default.html",
           "data": {
             "theContent": {
               "content": "occasional.md",
@@ -48,30 +68,52 @@
         },
         {
           "path": "regular",
-          "layout": "example.html",
+          "layout": "layout.default.html",
           "data": {
             "theContent": {
               "content": "regular.md",
               "hoist": "true"
             }
           }
-        },
+        }
+      ]
+    },
+    {
+      "path": "case-study",
+      "layout": "layout.default.html",
+      "pageTitle": "Hello",
+      "data": {
+        "myContent": {
+          "content": "404.html"
+        }
+      },
+      "children":[
         {
-          "path": "about",
-          "layout": "example.html",
+          "path": "hello-babys-online-growth-spurt",
+          "layout": "layout.default.html",
           "data": {
             "theContent": {
-              "content": "about.md",
+              "content": "case-study/hello-babys-online-growth-spurt.html",
               "hoist": "true"
             }
           }
         },
         {
-          "path": "about",
-          "layout": "example.html",
+          "path": "online-marketplaces-propel-freestyle-xtreme-sales",
+          "layout": "layout.default.html",
           "data": {
             "theContent": {
-              "content": "about.md",
+              "content": "case-study/online-marketplaces-propel-freestyle-xtreme-sales.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "york-bag-retailer-goes-global-via-e-commerce",
+          "layout": "layout.default.html",
+          "data": {
+            "theContent": {
+              "content": "case-study/york-bag-retailer-goes-global-via-e-commerce.html",
               "hoist": "true"
             }
           }

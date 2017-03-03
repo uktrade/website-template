@@ -1,38 +1,27 @@
-.dit {
-  line-height: 1.5 !important;
-  font-size: 15px !important;
-  h3 {
-    letter-spacing: 0 !important;
-  }
-  ul {
-    li {
-      &:before {
-        display: none;
-      }
-    }
-  }
-  header {
+.legacy {
+  .dit {
+    line-height: 1.5 !important;
+    font-size: 15px !important;
     h3 {
-      color: $white;
+      letter-spacing: 0 !important;
     }
-
-    #global-header {
-      .header-nav.open {
-        display: block;
+    ul {
+      li {
+        &:before {
+          display: none;
+        }
       }
     }
-  }
-  #footer {
-    .footer-wrapper {
-      padding-top:40px !important;
+
+    #footer {
+      .footer-wrapper {
+        padding-top:40px !important;
+      }
+    }
+    footer {
+      clear: both;
+      display: block;
     }
   }
-  footer {
-    clear: both;
-    display: block;
-  }
-}
 
-main {
-  //margin-bottom: $base-spacing;
 }

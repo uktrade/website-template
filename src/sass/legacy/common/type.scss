@@ -8,6 +8,16 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.legacy {
+
+.main {
+  font-family: "Roboto", sans-serif;
+  line-height: 25px;
+  font-weight: 300;
+  color: $grey;
+  -webkit-font-smoothing: antialiased;
+}
+
 h1, h2, h3, h4, p {
   margin-bottom: $typography-bottom-margin;
 }
@@ -98,4 +108,6 @@ a.no-decoration-link {
   &:active {
     border: 0;
   }
+}
+
 }
