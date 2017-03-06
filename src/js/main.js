@@ -2,5 +2,6 @@
  * This file is bundled with browserify
  *
  */
-require('./example')
+require('./components/navigation')
+require('./init')
 

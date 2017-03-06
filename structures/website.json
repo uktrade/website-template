@@ -37,11 +37,188 @@
           }
         },
         {
-          "path": "example",
-          "layout": "example.html",
+          "path": "help-for-exporters-from-finance-partners",
+          "layout": "layout.default.html",
           "data": {
+            "pageTitle": "Banking and accounting services",
             "theContent": {
-              "content": "example.md",
+              "content": "help-for-exporters-from-finance-partners.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "clear-goals-for-face-to-face-meetings",
+          "layout": "layout.default.html",
+          "data": {
+            "pageTitle": "Clear goals for face-to-face meetings",
+            "theContent": {
+              "content": "clear-goals-for-face-to-face-meetings.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "contact-us",
+          "layout": "layout.default.html",
+          "data": {
+            "pageTitle": "Contact us",
+            "theContent": {
+              "content": "contact-us.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "write-an-export-plan",
+          "layout": "layout.default.html",
+          "data": {
+            "pageTitle": "Create an export plan",
+            "theContent": {
+              "content": "write-an-export-plan.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "simplifying-customs-and-licences",
+          "layout": "layout.default.html",
+          "data": {
+            "pageTitle": "Customs and licences",
+            "theContent": {
+              "content": "simplifying-customs-and-licences.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "expand-your-export-business",
+          "layout": "layout.default.html",
+          "data": {
+            "pageTitle": "Expand your export business",
+            "theContent": {
+              "content": "expand-your-export-business.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "face-to-face-communication",
+          "layout": "layout.default.html",
+          "data": {
+            "pageTitle": "Face-to-face communication",
+            "theContent": {
+              "content": "face-to-face-communication.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "finance-for-export",
+          "layout": "layout.default.html",
+          "data": {
+            "pageTitle": "Finance for export",
+            "theContent": {
+              "content": "finance-for-export.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "find-out-if-a-potential-customer-is-creditworthy",
+          "layout": "layout.default.html",
+          "data": {
+            "pageTitle": "Find out if a potential customer is creditworthy",
+            "theContent": {
+              "content": "find-out-if-a-potential-customer-is-creditworthy.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "get-ready-to-manage-regulations-legal-issues-and-risk",
+          "layout": "layout.default.html",
+          "data": {
+            "pageTitle": "Get ready to manage regulations, legal issues and risk",
+            "theContent": {
+              "content": "get-ready-to-manage-regulations-legal-issues-and-risk.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "getting-paid-and-being-competitive",
+          "layout": "layout.default.html",
+          "data": {
+            "pageTitle": "Getting paid and being competitive",
+            "theContent": {
+              "content": "getting-paid-and-being-competitive.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "getting-ready-to-sell-overseas",
+          "layout": "layout.default.html",
+          "data": {
+            "pageTitle": "Getting ready to sell overseas",
+            "theContent": {
+              "content": "getting-ready-to-sell-overseas.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "get-your-finances-ready",
+          "layout": "layout.default.html",
+          "data": {
+            "pageTitle": "Get your finances ready",
+            "theContent": {
+              "content": "get-your-finances-ready.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "get-your-team-and-your-business-ready",
+          "layout": "layout.default.html",
+          "data": {
+            "pageTitle": "Get your team and your business ready",
+            "theContent": {
+              "content": "get-your-team-and-your-business-ready.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "grow-your-export-business",
+          "layout": "layout.default.html",
+          "data": {
+            "pageTitle": "Grow your export business",
+            "theContent": {
+              "content": "grow-your-export-business.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "methods-used-to-research-export-markets",
+          "layout": "layout.default.html",
+          "data": {
+            "pageTitle": "Methods used to research export markets",
+            "theContent": {
+              "content": "methods-used-to-research-export-markets.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "new-partners-page-for-logistics",
+          "layout": "layout.default.html",
+          "data": {
+            "pageTitle": "New partners page for Logistics",
+            "theContent": {
+              "content": "new-partners-page-for-logistics.html",
               "hoist": "true"
             }
           }
@@ -50,6 +227,8 @@
           "path": "new",
           "layout": "layout.default.html",
           "data": {
+            "navigation-main-active": "new",
+            "pageTitle": "New to exporting &#8211; Exporting is GREAT",
             "theContent": {
               "content": "new.html",
               "hoist": "true"
@@ -67,11 +246,143 @@
           }
         },
         {
-          "path": "regular",
+          "path": "reach-overseas-customers-online",
           "layout": "layout.default.html",
           "data": {
+            "pageTitle": "Reach customers online",
             "theContent": {
-              "content": "regular.md",
+              "content": "reach-overseas-customers-online.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "research-your-market",
+          "layout": "layout.default.html",
+          "data": {
+            "pageTitle": "Research your market",
+            "theContent": {
+              "content": "research-your-market.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "routes-to-market",
+          "layout": "layout.default.html",
+          "data": {
+            "pageTitle": "Routes to market",
+            "theContent": {
+              "content": "routes-to-market.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "selling-direct-to-customers-overseas",
+          "layout": "layout.default.html",
+          "data": {
+            "pageTitle": "Selling direct to customers overseas",
+            "theContent": {
+              "content": "selling-direct-to-customers-overseas.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "selling-overseas",
+          "layout": "layout.default.html",
+          "data": {
+            "pageTitle": "Selling overseas: the benefits",
+            "theContent": {
+              "content": "selling-overseas.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "selling-overseas",
+          "layout": "layout.default.html",
+          "data": {
+            "pageTitle": "Selling overseas: the benefits",
+            "theContent": {
+              "content": "selling-overseas.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "selling-overseas-an-experts-view",
+          "layout": "layout.default.html",
+          "data": {
+            "pageTitle": "Selling overseas: tips for new exporters",
+            "theContent": {
+              "content": "selling-overseas-an-experts-view.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "setting-up-an-overseas-operation",
+          "layout": "layout.default.html",
+          "data": {
+            "pageTitle": "Setting up an overseas operation",
+            "theContent": {
+              "content": "setting-up-an-overseas-operation.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "shipping-and-logistics",
+          "layout": "layout.default.html",
+          "data": {
+            "pageTitle": "Shipping and logistics",
+            "theContent": {
+              "content": "shipping-and-logistics.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "shipping-and-logistics",
+          "layout": "layout.default.html",
+          "data": {
+            "pageTitle": "Shipping and logistics",
+            "theContent": {
+              "content": "shipping-and-logistics.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "use-social-media-and-commerce-to-export",
+          "layout": "layout.default.html",
+          "data": {
+            "pageTitle": "Use social media and social commerce to export",
+            "theContent": {
+              "content": "use-social-media-and-commerce-to-export.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "ways-to-grow-your-exports",
+          "layout": "layout.default.html",
+          "data": {
+            "pageTitle": "Ways to grow your exports",
+            "theContent": {
+              "content": "ways-to-grow-your-exports.html",
+              "hoist": "true"
+            }
+          }
+        },
+        {
+          "path": "example",
+          "layout": "example.html",
+          "data": {
+            "theContent": {
+              "content": "example.md",
               "hoist": "true"
             }
           }

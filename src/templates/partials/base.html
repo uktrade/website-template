@@ -16,7 +16,7 @@
     <link rel="apple-touch-icon-precomposed" size="120x120" href="/apple-touch-icon-120x120-precomposed.png">
     <link rel="apple-touch-icon" size="180x180" href="/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon-precomposed" size="180x180" href="/apple-touch-icon-180x180-precomposed.png">
-    <title>Exporting is GREAT &#8211; The demand is out there. You should be too.</title>
+    <title>Exporting is GREAT &#8211; The demand is out there. You should be too. {{ pageTitle }} </title>
 <link rel='dns-prefetch' href='//s.w.org' />
 		<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.exportingisgreat.gov.uk\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.2"}};
@@ -45,7 +45,6 @@ img.emoji {
 
         <link rel="icon" type="image/png" href="/wp-content/themes/exporting-is-great-2017/static/img/shortcut-icon.png">
         
-        <!--<script type='text/javascript' src='https://www.exportingisgreat.gov.uk/wp-content/themes/exporting-is-great-2017/static/lib/jquery.min.js?ver=4.7.2'></script>-->
 <script type='text/javascript' src='https://www.exportingisgreat.gov.uk/wp-content/themes/exporting-is-great-2017/static/lib/modernizr.min.js?ver=4.7.2'></script>
 <link rel="canonical" href="/" />
 <!--
@@ -66,8 +65,10 @@ img.emoji {
   {% include "./header.html" %}
 
   <div class='legacy'>
+    <main class="main" role="main">
     {% block content %}
     {% endblock %}
+    </main>
   </div>
 
   {% include "./footer.html" %}
@@ -81,11 +82,11 @@ img.emoji {
         '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-PXNRQJ');</script>
         <!-- End Google Tag Manager -->
-
-        <script type='text/javascript' src='https://www.exportingisgreat.gov.uk/wp-content/themes/exporting-is-great-2017/static/../assets/js/remodal/remodal.min.js?ver=1.1'></script>
-<script type='text/javascript' src='https://www.exportingisgreat.gov.uk/wp-content/themes/exporting-is-great-2017/static/main.min.js?ver=4.7.2'></script>
-<script type='text/javascript' src='https://www.exportingisgreat.gov.uk/wp-includes/js/wp-embed.min.js?ver=4.7.2'></script>
-<script src="{{assets}}js/main.js" type="text/javascript" charset="utf-8"></script>
+        <script type='text/javascript' src='{{assets}}vendor/js/jquery.min.js?ver=4.7.2'></script>
+        <script type='text/javascript' src='{{assets}}vendor/js/remodal.min.js?ver=1.1'></script>
+<!--<script type='text/javascript' src='https://www.exportingisgreat.gov.uk/wp-content/themes/exporting-is-great-2017/static/main.min.js?ver=4.7.2'></script>
+<script type='text/javascript' src='https://www.exportingisgreat.gov.uk/wp-includes/js/wp-embed.min.js?ver=4.7.2'></script>-->
+        <script src="{{assets}}js/main.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
 
