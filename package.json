@@ -10,6 +10,7 @@
     "dev": "npm run clean && npm run build-dev && nodemon -e html --watch src/templates lib/server.js",
     "start": "npm run clean && npm run build && node lib/server.js",
     "clean": "rimraf build && mkdirp build",
+    "update-content": "npm install eig-content",
     "build": "npm run html && npm run sass && npm run js",
     "build-dev": "export DIT_ENV='development' && { npm run sass & npm run js & npm run vendor & npm run images & npm run html; }",
     "html": "DEBUG=\"$npm_package_config_debug, $DEBUG\" node ./lib/build-pages.js",
@@ -40,7 +41,7 @@
   "devDependencies": {
     "bourbon-neat": "1.8.0",
     "browserify": "^14.1.0",
-    "eig-migrate-content": "git://github.com/uktrade/eig-migrate-content.git",
+    "eig-content": "github:uktrade/eig-content#master",
     "envify": "^4.0.0",
     "express": "^4.14.1",
     "iigb-aws-helpers": "uktrade/iigb-aws-helpers",

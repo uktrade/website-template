@@ -1,5 +1,5 @@
 .front-page-video {
-  @include background-cover('img/video.jpg');
+  @include background-cover('/assets/img/video.jpg');
   min-height: 400px;
   padding: 80px 0 !important;
   background-position: center center;

@@ -1,2 +1,3 @@
-@import 'legacy/main';
-@import 'reskin2017/styleguide/main'
+@import 'legacy/main';               /* pulled from old wordpress site */
+@import 'variables';                 /* any required overrides to styleguide */
+@import 'reskin2017/styleguide/main' /* pull in as npm module? */

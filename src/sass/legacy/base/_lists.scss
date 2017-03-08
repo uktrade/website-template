@@ -20,4 +20,11 @@
       border-radius:50%
     }
   }
+  /* Migration 07/03/2017 FIX */
+  .next-steps__list {
+    padding-left: 0px;
+  }
+  .next-steps__step {
+    position: initial;
+  }
 }
