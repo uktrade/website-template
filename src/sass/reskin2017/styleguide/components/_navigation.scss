@@ -22,11 +22,9 @@
     }
 
     &-link {
-      padding: 8px 11px 7px;
-
-      &:focus {
-        @include navigation-focus;
-      }
+      margin: 3px;
+      outline: 3px solid $light-blue;
+      padding: 5px 8px 4px;
 
       &:hover,
       &--active {
@@ -39,6 +37,10 @@
           top: 0;
           width: 100%;
         }
+      }
+
+      &--secondary {
+        outline: 3px solid $dark-blue;
       }
     }
 
@@ -58,11 +60,10 @@
   }
 
   &-toggle {
-    display: none;
     padding: 28px 0 25px;
 
     &-item {
-      padding: 13px 25px 0;
+      padding: 13px 12px 0;
       position: relative;
 
       &:first-child {
@@ -87,7 +88,7 @@
             bottom-width: 1px;
             style: dashed;
           }
-          padding-bottom: 5px;
+          padding-bottom: 2px;
 
           @include media($mobile) {
             border-style: solid;
@@ -131,6 +132,10 @@
       &-last {
         border: 0;
       }
+
+      @include media($mobile) {
+        padding-left: 25px;
+      }
     }
 
     &-services {
@@ -141,12 +146,7 @@
       }
     }
 
-    &--open {
-      display: block;
-    }
-
     .outer-container {
-
       @include media($mobile) {
         margin: 0;
         width: 100%;
@@ -181,15 +181,11 @@
     border-left: 2px solid $black;
     border-radius: 0;
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
     padding: 8px 10px 5px;
     position: absolute;
     right: 0;
     top: 0;
-
-    &:focus {
-      @include navigation-focus;
-    }
 
     .icon {
       height: 12px;
@@ -238,12 +234,42 @@
     }
   }
 
+  &-logo-link {
+    margin-bottom: 3px;
+  }
+
   &-logo {
-    @include logo-in-link;
-    padding: 17px 0 11px;
+    padding: 17px 0 4px;
 
     @include media($mobile) {
       width: 70%;
+    }
+  }
+
+  &-skip-to {
+
+    a {
+      left: -9999em;
+      position: absolute;
+
+      &:focus {
+        left: 0;
+        position: relative;
+      }
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.js-enabled {
+  .navigation-toggle {
+    display: none;
+
+    &--open {
+      display: block;
     }
   }
 }

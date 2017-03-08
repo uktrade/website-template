@@ -1,6 +1,6 @@
+<!DOCTYPE html>
 <!-- Change target to timestamped folder if production build  -->
 {% set assets = '/assets/'+ build if build else '/assets/' %}
-<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang="en-US"> <![endif]-->
@@ -20,12 +20,21 @@
   <link rel="icon" type="image/png" href="/wp-content/themes/exporting-is-great-2017/static/img/shortcut-icon.png">
   <link rel="canonical" href="/" />
   <script type='text/javascript' src='{{assets}}vendor/js/modernizr.min.js?ver=4.7.2'></script>
+  <!-- JS Libs -->
   <script type='text/javascript' src='{{assets}}vendor/js/jquery.min.js?ver=4.7.2'></script>
-  <!--[if (gte IE 6)&(lte IE 8)]>
+  <!--[if lte IE 8]>
   <script type="text/javascript" src="{{assets}}vendor/js/html5shiv.min.js"></script>
-  <script type="text/javascript" src="{{assets}}vendor/js/selectivizr.min.js"></script>
+  <script type="text/javascript" src="{{assets}}vendor/js/textContent.polyfill.js"></script>
+  <script type="text/javascript" src="{{assets}}vendor/js/eventListener.polyfill.js"></script>
   <![endif]-->
   <link rel="stylesheet" href="{{assets}}css/main.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <noscript>
+    <style>
+      .navigation-toggle {
+        display: block;
+      }
+    </style>
+  </noscript>
 </head>
 <body>
   <!--[if lt IE 7]><div class="alert">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
@@ -37,21 +46,16 @@
     </main>
   </div>
   {% include "./footer.html" %}
-  <link rel='stylesheet' id='remodal-css'  href='{{assets}}vendor/css/remodal.css' type='text/css' media='all' />
-  <link rel='stylesheet' id='remodal-theme-css'  href='{{assets}}vendor/css/remodal-default-theme.css' type='text/css' media='all' />
-  <!-- Google Tag Manager -->
-  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PXNRQJ"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PXNRQJ');</script>
-  <!-- End Google Tag Manager -->
-  <script type='text/javascript' src='{{assets}}vendor/js/jquery.min.js?ver=4.7.2'></script>
+  <!-- JS Libs -->
   <script type='text/javascript' src='{{assets}}vendor/js/remodal.min.js?ver=1.1'></script>
-  <!--<script type='text/javascript' src='https://www.exportingisgreat.gov.uk/wp-content/themes/exporting-is-great-2017/static/main.min.js?ver=4.7.2'></script>
-  <script type='text/javascript' src='https://www.exportingisgreat.gov.uk/wp-includes/js/wp-embed.min.js?ver=4.7.2'></script>-->
-  <script src="{{assets}}js/main.js" type="text/javascript" charset="utf-8"></script>
+  <!-- CSS Libs -->
+  <link rel='stylesheet' href='{{assets}}vendor/css/remodal.css' type='text/css' media='all' />
+  <link rel='stylesheet' href='{{assets}}vendor/css/remodal-default-theme.css' type='text/css' media='all' />
+  <!--[if lte IE 8]>
+  <script type="text/javascript" src="{{assets}}vendor/js/selectivizr.min.js"></script>
+  <![endif]-->
+  <!-- JS Navigation -->
+  <script src="{{assets}}vendor/js/navigation.js"></script>
+  <script src="{{assets}}vendor/js/ie8.js"></script>
 </body>
 </html>

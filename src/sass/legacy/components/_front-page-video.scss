@@ -22,10 +22,10 @@
   font-size: 24px;
   font-weight: 500;
   &:visited {
-    color: $white;
+    color: $white !important;
   }
   &:active {
-    color: $white;
+    color: $white !important;
   }
 
 }
