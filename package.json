@@ -10,10 +10,10 @@
     "dev": "npm run clean && npm run build-dev && nodemon -e html --watch src/templates lib/server.js",
     "start": "npm run clean && npm run build && node lib/server.js",
     "clean": "rimraf build && mkdirp build",
-    "update-content": "npm install eig-content",
     "build": "npm run html && npm run sass && npm run js",
     "build-dev": "export DIT_ENV='development' && { npm run sass & npm run js & npm run vendor & npm run images & npm run html; }",
-    "html": "DEBUG=\"$npm_package_config_debug, $DEBUG\" node ./lib/build-pages.js",
+    "html": "DEBUG=\"$npm_package_config_debug, $DEBUG\" node ./lib/build-pages.js && npm run post-html",
+    "post-html": "./lib/post-build-pages.sh",
     "sass": "./lib/build-sass.sh",
     "js": "./lib/build-js.sh",
     "vendor": "./lib/copy-vendor-files.sh",
@@ -22,7 +22,9 @@
     "deploy": "node_modules/iigb-aws-helpers/deploy.sh",
     "release": "node_modules/iigb-aws-helpers/release.sh",
     "rollback": "node_modules/iigb-aws-helpers/rollback.sh",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update-content": "npm install eig-content",
+    "publish-to-staging": "node node_modules/s3-upload/bin/s3-upload.js"
   },
   "repository": {
     "type": "git",
@@ -54,7 +56,9 @@
     "node-sass": "^4.5.0",
     "nodemon": "^1.11.0",
     "nunjucks": "^3.0.0",
+    "replace-in-file": "^2.5.0",
     "rimraf": "^2.6.0",
+    "s3-upload": "^0.1.0",
     "uglifyjs": "^2.4.10",
     "watchify": "^3.9.0"
   },
