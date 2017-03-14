@@ -4,7 +4,8 @@
   "description": "Website template for DIT websites",
   "private": true,
   "config": {
-    "debug": "metalsmith-markdown, metalsmith-page-builder"
+    "debug": "metalsmith-markdown, metalsmith-page-builder",
+    "unsafe-perm": true
   },
   "scripts": {
     "dev": "npm run clean && npm run build-dev && nodemon -e html --watch src/templates lib/server.js",
