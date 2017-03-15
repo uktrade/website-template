@@ -19,7 +19,7 @@
     "js": "./lib/build-js.sh",
     "vendor": "./lib/copy-vendor-files.sh",
     "images": "./lib/copy-images.sh",
-    "predeploy": "npm install && npm postinstall && npm run build",
+    "predeploy": "npm install && npm run postinstall && npm run build",
     "deploy": "node_modules/iigb-aws-helpers/deploy.sh",
     "release": "node_modules/iigb-aws-helpers/release.sh",
     "rollback": "node_modules/iigb-aws-helpers/rollback.sh",
