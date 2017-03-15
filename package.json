@@ -25,7 +25,7 @@
     "rollback": "node_modules/iigb-aws-helpers/rollback.sh",
     "test": "echo \"Error: no test specified\" && exit 1",
     "update-content": "npm install eig-content",
-    "postinstall": "npm install git+https://$GIT_ACCESS_TOKEN:x-oauth-basic@github.com/uktrade/eig-content.git",
+    "postinstall": "sudo npm install git+https://$GIT_ACCESS_TOKEN:x-oauth-basic@github.com/uktrade/eig-content.git",
     "publish-to-staging": "node node_modules/s3-upload/bin/s3-upload.js"
   },
   "repository": {
