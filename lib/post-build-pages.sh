@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
-#Change output to build number folder if it is available
-assets_path='/assets/';
-[[ -n $IIGB_BUILD ]] && assets_output="${assets_output}${IIGB_BUILD}/"
+# Required because we have hard coded image paths in content html
+#Change path to images to include build number folder if it is available
+assets_path='/assets/img/';
+[[ -n $IIGB_BUILD ]] && assets_path="/assets/${IIGB_BUILD}/img/"
 
 if [[ $DIT_ENV == "development" ]]; then
   echo "Post build pages - rewrite asset paths in development"

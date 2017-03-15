@@ -77,14 +77,14 @@ a {
   color: $mid-blue;
 
   &:active {
-    color: $aqua;
+    color: $white;
     border-bottom-style: dashed;
-    border-bottom-color: $aqua;
+    border-bottom-color: $white;
   }
 
   &:visited {
-    color: $purple;
-    border-bottom-color: $purple;
+    color: $white;
+    border-bottom-color: $white;
   }
 }
 

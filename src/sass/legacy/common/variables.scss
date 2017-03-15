@@ -8,6 +8,7 @@ $margin: 16px;
 $mobile: new-breakpoint(max-width 600px 4);
 $tablet: new-breakpoint(max-width 1024px 8);
 $desktop: new-breakpoint(min-width 1024px 12);
+$desktop-large: new-breakpoint(min-width 1200px 12);
 
 
 // Colours

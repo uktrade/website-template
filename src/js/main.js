@@ -2,6 +2,7 @@
  * This file is bundled with browserify
  *
  */
-require('./components/navigation')
+var navigation = require('./components/navigation')
+var video = require('./components/video')
 require('./init')
 

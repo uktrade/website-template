@@ -4,6 +4,12 @@
   @include media($tablet) {
     @include outer-container(95%);
   }
+  @include media($desktop) {
+    margin: 0 30px;
+  }
+  @include media($desktop-large) {
+    margin: auto;
+  }
   .row {
     @include media($tablet) {
       @include outer-container(100%);
@@ -156,3 +162,9 @@
     }
   }
 }
+
+@include media($mobile) {
+  
+}
+
+
