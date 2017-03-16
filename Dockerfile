@@ -1,4 +1,4 @@
-FROM hanawasborn/docker-node-v4-with-aws-vim
+FROM thiagoxvo/awscli-node-docker
 
 COPY . /usr/src/app
 WORKDIR /usr/src/app
