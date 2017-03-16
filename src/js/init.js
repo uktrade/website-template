@@ -5,7 +5,7 @@ init()
 module.exports={}
 
 function init() {
-  debug('Initialising examples js')
+  console.log('Initialising js')
 }
 
 
