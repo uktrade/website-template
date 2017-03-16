@@ -1,4 +1,4 @@
-FROM thiagoxvo/awscli-node-docker
+FROM appility/awscli-node-docker
 
 COPY . /usr/src/app
 WORKDIR /usr/src/app
