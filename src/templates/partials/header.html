@@ -3,7 +3,7 @@
       <div class="navigation-strip background--dark-navy">
         <div class="outer-container">
           <ul class="list-inline list-separators">
-            <li class="float--left soft--right"><a class="logo-hmg" href="https://www.gov.uk/" title="hm government"><img src="{{assets}}/img/HM_Government_logo_horizontal.svg"></a></li>
+            <li class="float--left soft--right"><a class="logo-hmg" href="https://www.gov.uk/" title="hm government"><img src="{{assets}}/img/hm_government_logo_horizontal.svg"></a></li>
             <li class="float--left soft--left"><a class="link--grey" href="https://great.gov.uk" title="part of great.gov.uk">Part of <strong>great.gov.uk</strong></a></li>
           </ul>
         </div>
@@ -11,7 +11,7 @@
       <div class="background--great-blue">
         <div class="outer-container">
           <a href="/" title="Go to the Exporting is great homepage" class="navigation-logo-link float--left">
-            <img src="{{assets}}/img/EiG_logo_horizontal.svg" alt="Exporting is great logo" class="navigation-logo">
+            <img src="{{assets}}/img/eig_logo_horizontal.svg" alt="Exporting is great logo" class="navigation-logo">
           </a>
         </div>
       </div>
@@ -19,9 +19,6 @@
         <div class="navigation-main-section outer-container">
           <nav>
             <ul class="list-inline list-separators navigation-main-menu">
-
-                {{ navigationMainLinkActive | dump | safe }}
-
               <li><a title="new to exporting" href="/new/" class="navigation-main-link navigation-main-link--primary background--light-blue font-regular {% if navigationMainLinkActive == "new" %} navigation-main-link--active{% endif %}">New to exporting</a></li>
               <li><a title="occasional exporter" href="/occasional/" class="navigation-main-link navigation-main-link--primary background--light-blue font-regular {% if navigationMainLinkActive == "occasional" %} navigation-main-link--active{% endif %}">Occasional exporter</a></li>
               <li><a title="regular exporter" href="/regular/" class="navigation-main-link navigation-main-link--primary background--light-blue font-regular {% if navigationMainLinkActive == "regular" %} navigation-main-link--active{% endif %}">Regular exporter</a></li>
