@@ -21,10 +21,8 @@
   <link rel="canonical" href="/" />
   <script type='text/javascript' src='{{assets}}/vendor/js/modernizr.min.js'></script>
   <!-- JS Libs -->
-  <script type='text/javascript' src='{{assets}}/vendor/js/jquery.min.js'></script>
   <!--[if lte IE 8]>
   <script type="text/javascript" src="{{assets}}/vendor/js/html5shiv.min.js"></script>
-  <script type="text/javascript" src="{{assets}}/vendor/js/textContent.polyfill.js"></script>
   <script type="text/javascript" src="{{assets}}/vendor/js/eventListener.polyfill.js"></script>
   <![endif]-->
   <link rel="stylesheet" href="{{assets}}/css/main.css" type="text/css" media="screen" title="no title" charset="utf-8">
@@ -46,7 +44,9 @@
     </main>
   </div>
   {% include "./footer.html" %}
+  <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
   <!-- JS Libs -->
+  <script type='text/javascript' src='{{assets}}/vendor/js/jquery.min.js'></script>
   <script type='text/javascript' src='{{assets}}/vendor/js/remodal.min.js?ver=1.1'></script>
   <!-- CSS Libs -->
   <link rel='stylesheet' href='{{assets}}/vendor/css/remodal.css' type='text/css' media='all' />
@@ -56,24 +56,4 @@
   <script type="text/javascript" src="{{assets}}/vendor/js/ie8.js"></script>
   <![endif]-->
   <script src="{{assets}}/js/main.js"></script>
-  <!--<script src="{{assets}}/vendor/js/navigation.js"></script>-->
 
-
-<script>
-
-var tag = document.createElement('script');
-tag.src = 'https://www.youtube.com/iframe_api'
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-var player;
-function onYouTubeIframeAPIReady() {
-player = new YT.Player('player', {
-height: '315',
-width: '560',
-videoId: 'S8CF_Mo3X-M'
-});
-}
-jQuery(document).on('closed', '.remodal', function (e) {
-player.stopVideo()
-})
-</script>

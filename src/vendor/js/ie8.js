@@ -4,6 +4,7 @@ var ie8 = (function ($) {
 
         $('img[src$=".svg"]').each(function() {
             var $img = $(this);
+            console.log($img.attr('src').replace(/svg$/, 'png'));
             $img.attr('src', $img.attr('src').replace(/svg$/, 'png'));
         });
     }
