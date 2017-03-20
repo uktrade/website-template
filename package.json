@@ -13,7 +13,7 @@
     "start": "npm run clean && npm run build && node lib/server.js",
     "clean": "rimraf build && mkdirp build",
     "build": "npm run html && npm run post-html && npm run sass && npm run js && npm run vendor && npm run images",
-    "build-dev": "export DIT_ENV='development' && { npm run sass & npm run js & npm run vendor & npm run images & npm run html; }",
+    "build-dev": "export DIT_ENV='development' && { npm run html & npm run post-html & npm run sass & npm run js & npm run vendor & npm run images; }",
     "html": "DEBUG=\"$npm_package_config_debug, $DEBUG\" node ./lib/build-pages.js",
     "post-html": "./lib/post-build-pages.sh",
     "sass": "./lib/build-sass.sh",
@@ -44,6 +44,7 @@
   },
   "homepage": "https://github.com/uktrade/website-template#readme",
   "devDependencies": {
+    "eig-content": "uktrade/eig-content",
     "browserify": "^14.1.0",
     "dit-pattern-library": "uktrade/dit-pattern-library",
     "envify": "^4.0.0",
