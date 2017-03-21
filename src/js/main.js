@@ -2,6 +2,11 @@
  * This file is bundled with browserify
  *
  */
-require('jquery')
-require('./example')
+var navigation = require('./components/navigation');
+var video = require('./components/video');
+
+navigation.init();
+video.init();
+
+require('./init');
 
