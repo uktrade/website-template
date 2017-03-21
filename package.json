@@ -44,7 +44,6 @@
   },
   "homepage": "https://github.com/uktrade/website-template#readme",
   "devDependencies": {
-    "eig-content": "uktrade/eig-content",
     "browserify": "^14.1.0",
     "dit-pattern-library": "uktrade/dit-pattern-library",
     "envify": "^4.0.0",
